@@ -1,0 +1,24 @@
+{
+  "name": "weekendchallenge4_angular",
+  "version": "1.0.0",
+  "description": "Angular Weekend Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukasNord/WeekendChallenge4_Angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LukasNord/WeekendChallenge4_Angular/issues"
+  },
+  "homepage": "https://github.com/LukasNord/WeekendChallenge4_Angular#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "express": "^4.16.2",
+    "pg": "^7.4.1"
+  }
+}
