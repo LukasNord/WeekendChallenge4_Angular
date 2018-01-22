@@ -8,11 +8,13 @@ myApp.controller('GalleryController1', [ '$http', function($http){
     const self = this;
 
     self.likeButton = function(){
-        console.log('clicked like button'); 
+        console.log('clicked like button');
+        self.imageObject.likeCounter += 1; 
     }
     self.imageObject = {
         show: true,
-        textShow:false
+        textShow:false,
+        likeCounter: 0
     }
     self.toggleShowTextOn = function(){
         
@@ -34,10 +36,12 @@ myApp.controller('GalleryController2', [ '$http', function($http){
 
     self.likeButton = function(){
         console.log('clicked like button'); 
+        self.imageObject.likeCounter += 1; 
     }
     self.imageObject = {
         show: true,
-        textShow:false
+        textShow:false,
+        likeCounter: 0
     }
     self.toggleShowTextOn = function(){
         
@@ -59,10 +63,12 @@ myApp.controller('GalleryController3', [ '$http', function($http){
 
     self.likeButton = function(){
         console.log('clicked like button'); 
+        self.imageObject.likeCounter += 1; 
     }
     self.imageObject = {
         show: true,
-        textShow:false
+        textShow:false,
+        likeCounter: 0
     }
     self.toggleShowTextOn = function(){
         
@@ -84,10 +90,12 @@ myApp.controller('GalleryController4', [ '$http', function($http){
 
     self.likeButton = function(){
         console.log('clicked like button'); 
+        self.imageObject.likeCounter += 1; 
     }
     self.imageObject = {
         show: true,
-        textShow:false
+        textShow:false,
+        likeCounter: 0
     }
     self.toggleShowTextOn = function(){
         
@@ -109,10 +117,12 @@ myApp.controller('GalleryController5', [ '$http', function($http){
 
     self.likeButton = function(){
         console.log('clicked like button'); 
+        self.imageObject.likeCounter += 1; 
     }
     self.imageObject = {
         show: true,
-        textShow:false
+        textShow:false,
+        likeCounter: 0
     }
     self.toggleShowTextOn = function(){
         
@@ -134,10 +144,12 @@ myApp.controller('GalleryController6', [ '$http', function($http){
 
     self.likeButton = function(){
         console.log('clicked like button'); 
+        self.imageObject.likeCounter += 1; 
     }
     self.imageObject = {
         show: true,
-        textShow:false
+        textShow:false,
+        likeCounter: 0
     }
     self.toggleShowTextOn = function(){
         
