@@ -13,39 +13,43 @@
 </head>
 <body class="body-modify" ng-app="myApp">
         
-        <div ng-controller="GalleryController as vm" class="gallery">
-                <figure >
-                  <img src="assets/image7.jpg"  ng-if="vm.imageObject.show" ng-click="vm.toggleShowTextOn()">
-                  <p ng-model="vm.imageObject.text" ng-if="vm.imageObject.textShow" ng-click="vm.toggleShowTextOff()">This is my dog Baloo!</p>
-                  <small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                
-                <figure>
-                  <img src="assets/image3.jpg">
-                  <figcaption>Utah, Moab </figcaption><small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                  <img src="assets/image4.jpg">
-                  <figcaption>Crater Lake Snow Pack</figcaption><small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                  <img src="assets/image10.jpg">
-                  <figcaption>Crater Lake</figcaption><small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                  <img src="assets/image6.jpg">
-                  <figcaption>Yellow Stone</figcaption><small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                    <img src="assets/image9.jpg">
-                    <figcaption>Yellow Stone</figcaption><small>Leave a Comment</small>
-                    <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
+        <div  class="gallery">
+            <figure ng-controller="GalleryController1 as vm">
+                <img ng-src="assets/image7.jpg"  ng-if="vm.imageObject.show" ng-click="vm.toggleShowTextOn()">
+                <p ng-model="vm.imageObject.text" ng-if="vm.imageObject.textShow" ng-click="vm.toggleShowTextOff()">This is my dog Baloo!</p>
+                <small>Leave a Comment</small>
+                <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
+            </figure>
+            <figure ng-controller="GalleryController2 as vm">
+                <img src="assets/image8.jpg"  ng-if="vm.imageObject.show" ng-click="vm.toggleShowTextOn()">
+                <p ng-model="vm.imageObject.text" ng-if="vm.imageObject.textShow" ng-click="vm.toggleShowTextOff()">This is my dog Baloo!</p>
+                <small>Leave a Comment</small>
+                <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
+            </figure>
+            <figure ng-controller="GalleryController3 as vm">
+                <img src="assets/image4.jpg"  ng-if="vm.imageObject.show" ng-click="vm.toggleShowTextOn()">
+                <p ng-model="vm.imageObject.text" ng-if="vm.imageObject.textShow" ng-click="vm.toggleShowTextOff()">This is my dog Baloo!</p>
+                <small>Leave a Comment</small>
+                <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
+            </figure>
+            <figure ng-controller="GalleryController4 as vm">
+                <img src="assets/image10.jpg"  ng-if="vm.imageObject.show" ng-click="vm.toggleShowTextOn()">
+                <p ng-model="vm.imageObject.text" ng-if="vm.imageObject.textShow" ng-click="vm.toggleShowTextOff()">This is my dog Baloo!</p>
+                <small>Leave a Comment</small>
+                <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
+            </figure>
+            <figure ng-controller="GalleryController5 as vm">
+                <img src="assets/image6.jpg"  ng-if="vm.imageObject.show" ng-click="vm.toggleShowTextOn()">
+                <p ng-model="vm.imageObject.text" ng-if="vm.imageObject.textShow" ng-click="vm.toggleShowTextOff()">This is my dog Baloo!</p>
+                <small>Leave a Comment</small>
+                <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
+            </figure>
+            <figure ng-controller="GalleryController6 as vm">
+                <img src="assets/image9.jpg"  ng-if="vm.imageObject.show" ng-click="vm.toggleShowTextOn()">
+                <p ng-model="vm.imageObject.text" ng-if="vm.imageObject.textShow" ng-click="vm.toggleShowTextOff()">This is my dog Baloo!</p>
+                <small>Leave a Comment</small>
+                <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
+            </figure>
                 
             
         </div>
