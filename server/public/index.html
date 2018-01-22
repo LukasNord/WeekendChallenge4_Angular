@@ -14,9 +14,10 @@
 <body class="body-modify" ng-app="myApp">
         
         <div ng-controller="GalleryController as vm" class="gallery">
-                <figure>
-                  <img src="assets/image1.jpg">
-                  <figcaption>Dog on the Beach</figcaption><small>Leave a Comment</small>
+                <figure >
+                  <img src="assets/image7.jpg"  ng-if="vm.imageObject.show" ng-click="vm.toggleShowTextOn()">
+                  <p ng-model="vm.imageObject.text" ng-if="vm.imageObject.textShow" ng-click="vm.toggleShowTextOff()">This is my dog Baloo!</p>
+                  <small>Leave a Comment</small>
                   <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
                 </figure>
                 
@@ -31,7 +32,7 @@
                   <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
                 </figure>
                 <figure>
-                  <img src="assets/image5.jpg">
+                  <img src="assets/image10.jpg">
                   <figcaption>Crater Lake</figcaption><small>Leave a Comment</small>
                   <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
                 </figure>
@@ -41,72 +42,11 @@
                   <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
                 </figure>
                 <figure>
-                  <img src="assets/image7.jpg">
-                  <figcaption>Baloo </figcaption><small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                  <img src="assets/image8.jpg">
-                  <figcaption>Portland</figcaption><small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                  <img src="assets/image9.jpg">
-                  <figcaption>Oliver, the Cat </figcaption><small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                  <img src="assets/image10.jpg">
-                  <figcaption> Mount Hood</figcaption><small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                   
-                </figure>
-                <figure>
-                  <img src="assets/image11.jpg">
-                  <figcaption>Downtown Portland</figcaption><small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                  <img src="assets/image12.jpg">
-                  <figcaption>Crater Lake</figcaption><small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                  <img src="assets/image13.jpg">
-                  <figcaption> Thirsty Sasquatch Bar</figcaption><small>Leave a Comment</small>
-                  <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                    <img src="assets/image14.jpg">
-                    <figcaption> Jurassic Park</figcaption><small>Leave a Comment</small>
+                    <img src="assets/image9.jpg">
+                    <figcaption>Yellow Stone</figcaption><small>Leave a Comment</small>
                     <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
                 </figure>
-                <figure>
-                    <img src="assets/image15.jpg">
-                    <figcaption> Weezer Concert</figcaption><small>Leave a Comment</small>
-                    <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                    <img src="assets/image16.jpg">
-                    <figcaption> Tiger Lily</figcaption><small ng-click="">Leave a Comment</small>
-                    <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                    <img src="assets/image17.jpg">
-                    <figcaption> Mason Jennings</figcaption><small>Leave a Comment</small>
-                    <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-
-                <figure>
-                    <img src="assets/image18.jpg">
-                    <figcaption> Car Hood Kitty</figcaption><small>Leave a Comment</small>
-                    <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
-                <figure>
-                    <img src="assets/image19.jpg">
-                    <figcaption> Spoon and the Shins at Red Rocks</figcaption><small>Leave a Comment</small>
-                    <i ng-click="vm.likeButton()" class="fa fa-thumbs-o-up" aria-hidden="true"></i>  
-                </figure>
+                
             
         </div>
               

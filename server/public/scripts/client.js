@@ -13,10 +13,27 @@ myApp.controller('GalleryController', [ '$http', function($http){
     }
 
 
+    self.imageObject = {
+        show: true,
+        textShow:false
+    }
+   
 
+    self.toggleShowTextOn = function(){
+        
+        self.imageObject = {
+            show: false,
+            textShow: true
+        }
 
+    }
 
-
+    self.toggleShowTextOff = function(){
+        self.imageObject = {
+            show: true,
+            textShow: false
+        }
+    }
 
 
 
