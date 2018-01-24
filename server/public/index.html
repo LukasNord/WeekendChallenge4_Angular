@@ -15,6 +15,7 @@
         
         <div  class="gallery">
             <figure ng-controller="GalleryController1 as vm">
+                
                 <img ng-src="assets/image7.jpg"  ng-if="vm.imageObject.show" ng-click="vm.toggleShowTextOn()">
                 <p ng-model="vm.imageObject.text" ng-if="vm.imageObject.textShow" ng-click="vm.toggleShowTextOff()">This is my dog Baloo!</p>
                 <small>Leave a Comment</small>
