@@ -12,32 +12,15 @@
     <title>Document</title>
 </head>
 <body class="body-modify" ng-app="myApp">
-        
-        <div  class="gallery">
-            <main ng-controller="GalleryController as vm">
-                    <!-- <main ng-controller="PictureController as vm">
-                            <div ng-repeat="picture in vm.pictureList">
-                                <img ng-click="vm.toggleCaption(picture)" class="picturebox" ng-src="{{picture.url}}">
-                                <p ng-if="picture.showCaption">{{picture.caption}}</p>
-                                <p>Likes: {{picture.likes}}</p>
-                                <button ng-click="vm.addLike(picture)">LIKE</button>
-                            </div>    -->
-                                    
-                                  
-                <div ng-repeat="picture in vm.pictureList">
-                   <figure > 
-                        <img img ng-click="vm.toggleCaption(picture)"    ng-src="{{picture.url}}">
-                        <p ng-if="picture.showCaption">{{picture.caption}}</p>
-                        <small>Leave a Comment</small>
-                        <i ng-click="vm.likeButton(picture)" class="fa fa-thumbs-o-up" aria-hidden="true"></i> {{picture.likes}}
-                    </figure>   
-                </div>
-            </main>
-            
-        </div>
+               
+    <div class="gallery" ng-controller="GalleryController as vm">
+        <figure ng-repeat="picture in vm.pictureList"> {{$index}}
+            <img img ng-click="vm.toggleCaption(picture)"    ng-src="{{picture.url}}">
+            <p ng-if="picture.showCaption">{{picture.caption}}</p>
+            <small>Leave a Comment</small>
+            <i ng-click="vm.likeButton(picture)" class="fa fa-thumbs-o-up" aria-hidden="true"></i> {{picture.likes}}
+        </figure>   
+    </div>
 
-              
-
-    
 </body>
 </html>

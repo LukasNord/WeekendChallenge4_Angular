@@ -105,13 +105,13 @@ myApp.controller('GalleryController', [ '$http', function($http){
         },
         {
             url: '/assets/image20.jpg',
-            caption: "Weezer concert from last Summer.",
+            caption: "Outdoor dog in a previous life. Loves couches.",
             likes: 0,
             showCaption: false,
         },
         {
-            url: '/assets/image21.jpg',
-            caption: "Sleepy Dog",
+            url: '/assets/image1.jpg',
+            caption: "Thirsty Dog",
             likes: 0,
             showCaption: false,
         },
