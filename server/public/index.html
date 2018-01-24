@@ -14,7 +14,7 @@
 <body class="body-modify" ng-app="myApp">
                
     <div class="gallery" ng-controller="GalleryController as vm">
-        <figure ng-repeat="picture in vm.pictureList"> {{$index}}
+        <figure ng-repeat="picture in vm.pictureList"> 
             <img img ng-click="vm.toggleCaption(picture)"    ng-src="{{picture.url}}">
             <p ng-if="picture.showCaption">{{picture.caption}}</p>
             <small>Leave a Comment</small>
